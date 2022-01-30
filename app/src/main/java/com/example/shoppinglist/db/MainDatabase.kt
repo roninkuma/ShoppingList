@@ -10,6 +10,7 @@ import com.example.shoppinglist.entities.*
 ShoppingListItem::class,ShoppingListNames::class], version = 1)
 
 abstract class MainDatabase : RoomDatabase() {
+    abstract fun getDao():Dao
 
     companion object {
 
